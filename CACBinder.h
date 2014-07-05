@@ -9,9 +9,9 @@ class CACBinder {
 public:
 	CACBinder();
 
-	void bind(NSString* event, CACEventHandler* handler);
-	void event(NSString* event, NSDictionary* params);
-	void redirect(CACBinder* binder, NSString* event);
+	void bind(NSString* event, CACEventHandler handler);
+	void event(NSString* event, NSDictionary* params) const;
+	void redirect(const CACBinder& binder, NSString* event);
 
 private:
 	NSMutableDictionary* handlers;
