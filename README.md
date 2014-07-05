@@ -1,4 +1,4 @@
 objc-utils
 ==========
 
-Various Objective-C utilities.
+Various Objective-C++ utilities.
